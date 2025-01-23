@@ -1,0 +1,30 @@
+int led_red = 5; // o LED vermelho está concetado a Pin 5 do Arduíno
+int led_yellow = 6; // o LED amarelo está concetado a Pin 6 do Arduíno
+int led_green = 7; // o LED verde está concetado a Pin 7 do Arduíno
+
+void setup() {
+  // configura todos os LEDs como SAÍDA (OUTPUT)
+  pinMode(led_red, OUTPUT);
+  pinMode(led_yellow, OUTPUT);
+  pinMode(led_green, OUTPUT);
+}
+
+void loop() {
+  // liga o LED verde e desligue os outros LEDs
+  digitalWrite(led_red, LOW); 
+  digitalWrite(led_yellow, LOW);
+  digitalWrite(led_green, HIGH);
+  delay(2000);    // wait 2 seconds
+  
+  // liga o LED amarelo e desligue os outros LEDs
+  digitalWrite(led_red, LOW);   
+  digitalWrite(led_yellow, HIGH);
+  digitalWrite(led_green, LOW);
+  delay(1000);   // wait 1 second
+  
+  // liga o LED vermelho e desligue os outros LEDs
+  digitalWrite(led_red, HIGH);  
+  digitalWrite(led_yellow, LOW);
+  digitalWrite(led_green, LOW);
+  delay(3000);  // wait 3 seconds        
+}
