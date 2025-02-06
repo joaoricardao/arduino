@@ -1,3 +1,14 @@
+/*
+Este é um exemplo de código para controlar três LEDs (vermelho, amarelo e verde) conectados a um Arduino.
+Os LEDs alternam suas cores em intervalos de tempo diferentes:
+- O LED verde acende por 2 segundos.
+- O LED amarelo acende por 1 segundo.
+- O LED vermelho acende por 3 segundos.
+
+O código usa a função pinMode para configurar os pinos como saída e a função digitalWrite
+para controlar o estado dos LEDs.
+*/
+
 int led_red = 5; // o LED vermelho está concetado a Pin 5 do Arduíno
 int led_yellow = 6; // o LED amarelo está concetado a Pin 6 do Arduíno
 int led_green = 7; // o LED verde está concetado a Pin 7 do Arduíno
