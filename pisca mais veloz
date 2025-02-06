@@ -1,0 +1,34 @@
+/* Declare uma variável chamada sensor do tipo
+inteiro (int) e inicializando-a com o valor 0
+*/
+int sensor=0;
+
+// Configure os pinos
+
+void setup()
+{
+  pinMode(A0,INPUT);
+  pinMode(13,OUTPUT);
+}
+
+
+void loop()
+{
+	/* 
+	Ler o valor de um sensor conectado ao pino 
+	analógico A0
+	*/  
+	sensor=analogRead(A0);
+  
+	// Ligue o LED
+	digitalWrite(13,HIGH);
+  	 
+    // Pausar o programa <sensor> milisegundos
+	delay(sensor);
+  
+	// Apague o LED
+	digitalWrite(13,LOW);
+	
+	// Pausar o programa <sensor> milisegundos
+	delay(sensor);
+}
