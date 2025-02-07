@@ -1,0 +1,25 @@
+/*
+Programa com botão que liga e desliga um LED
+*/
+
+// Define os pinos utilizados
+const int botao = 2;   // Pino do botão (entrada)
+const int led = 3;     // Pino do LED (saída)
+
+void setup() 
+{
+  pinMode(botao, INPUT);  // Configura o botão como entrada
+  pinMode(led, OUTPUT);   // Configura o LED como saída
+}
+
+void loop() {
+  // Verifica o estado do botão
+  if (digitalRead(botao) == HIGH) 
+  {
+    digitalWrite(led, HIGH);  // Liga o LED se o botão estiver pressionado
+  } 
+  else 
+  {
+    digitalWrite(led, LOW);   // Desliga o LED se o botão não estiver pressionado
+  }
+}
