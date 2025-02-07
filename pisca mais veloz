@@ -1,4 +1,5 @@
-/* Declare uma variável chamada sensor do tipo
+/* 
+Declare uma variável chamada sensor do tipo
 inteiro (int) e inicializando-a com o valor 0
 */
 int sensor=0;
